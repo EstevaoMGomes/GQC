@@ -6,12 +6,11 @@
         <link rel="stylesheet" href="styles.css">
         <title> Grande Quiz de Cálculo </title>
         <script>
-            function muda(n){
-                var p ='GQC'+n;
-                if(document.getElementById(p).style.display=='none'){
-                    document.getElementById(p).style.display='table';
-                }else{
+            function muda(p){
+                if(document.getElementById(p).style.display=='table'){
                     document.getElementById(p).style.display='none';
+                }else{
+                    document.getElementById(p).style.display='table';
                 }
             }
         </script>
@@ -34,7 +33,7 @@
                 disse o professor na entrega de prémios de 2022.
             </p>
 
-            <div class="botao" onclick="javascript:muda(2020)">
+            <div class="botao" onclick="javascript:muda('GQC2020')">
                 Edição 2020
             </div>
             <br>
@@ -43,9 +42,9 @@
                     <h1>
                         Edição de 2020
                     </h1>
-                    <h2>
-                        Vencedores:
-                    </h2>
+                    <p>
+                        Na edição 0 do Grande Quiz de Cálculo, este foi feito como uma experiência devido à pandemia.
+                    </p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere voluptatibus qui sed quod? Vel deserunt odit tenetur veritatis voluptas officiis, iure quos ut ullam et voluptate reiciendis quisquam expedita.
                 </div>
                 <div class="column2">
@@ -54,7 +53,8 @@
                     </a>
                 </div>
             </div>
-            <div class="botao" onclick="javascript:muda(2021)">
+
+            <div class="botao" onclick="javascript:muda('GQC2021')">
                 Edição 2021
             </div>
             <br>
@@ -74,7 +74,32 @@
                     </a>
                 </div>
             </div>
-            <div class="botao" onclick="javascript:muda(2022)">
+
+            <div class="botao" onclick="javascript:muda('GQQ2021')">
+                GQQ 2021
+            </div>
+            <br>
+            <div id= "GQQ2021" class="row" >
+                <div class="column2">
+                    <h1>
+                        Grande Quarter Quiz 2021
+                    </h1>
+                    <p>
+                        Devido a uma pergunta feita numa aula sobre a diferença nos gráficos das funções <b>arctan</b> e <b>tanh</b>, foi realizado o primeiro Grande Quarter Quiz na pausa entre semestres com o propósito de através das ferramentas dadas até então em Cálculo I, conseguir diferenciar os gráficos das diferentes funções.
+                    </p>
+                    <h2>
+                        Vencedores:
+                    </h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere voluptatibus qui sed quod? Vel deserunt odit tenetur veritatis voluptas officiis, iure quos ut ullam et voluptate reiciendis quisquam expedita.
+                </div>
+                <div class="column2">
+                    <a download="GQQ2021" href="GQQ2021.png" title="GQQ 2021">
+                        <img class ="quiz" alt="GQQ2021" src="GQQ2021.png">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="botao" onclick="javascript:muda('GQC2022')">
                 Edição 2022
             </div>
             <br>
@@ -94,7 +119,7 @@
                     </a>
                 </div>
             </div>
-            <div class="botao" onclick="javascript:muda(2023)">
+            <div class="botao" onclick="javascript:muda('GQC2023')">
                 Edição 2023
             </div>
             <br>
@@ -117,8 +142,8 @@
                     &#9993 pfreitas@math.tecnico.ulisboa.pt<br>
                     &#128205 Departamento de Mtemática, Instituto Superior Técnico
                 </div>
-                <div class="column" style="width: 58%;">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id natus aliquam, laudantium repudiandae adipisci, praesentium fugiat excepturi necessitatibus aliquid recusandae, accusamus eaque harum fugit beatae omnis minima. Expedita, optio facilis.
+                <div class="column" style="width: 55%; text-align: right; padding-right: 50px;">
+                    <img alt="DM" src="DM.png" style="width: 20%">
                 </div>
                 <div class="column" style="width: 10%;">
                     <div style="text-align: center;"><b>Autores:</b></div>

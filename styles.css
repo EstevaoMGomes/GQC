@@ -40,6 +40,8 @@ div.botao {
   font-size: 13px;
   margin: 4px 2px;
   cursor: default;
+  color: darkblue;
+  font-family: 'Pacifico';
 }
 
 div.botao:hover{
