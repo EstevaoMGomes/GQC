@@ -5,29 +5,92 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <title> Grande Quiz de Cálculo </title>
-    </head>
+        <script>
+            function muda(n){
+                var p ='GQC'+n;
+                if(document.getElementById(p).style.display=='none'){
+                    document.getElementById(p).style.display='table';
+                }else{
+                    document.getElementById(p).style.display='none';
+                }
+            }
+        </script>
+    </head>    
     <body>
         <h1>
-            Grande Quiz de Cálculo
+            O Grande Quiz de Cálculo Diferencial e Integral
         </h1>
 
-        <nav class ="navbar">
-            <ul>
-                <li><a href="GQC.html">Home</a></li>
-                <div class="dropdown">
-                    <li><button>Edições anteriores</button></li>
-                    <div class="content">
-                        <a href="2021.html"> Edição 2021</a>
-                        <a href="2022.html"> Edição 2022</a>
-                        <a href="2023.html"> Edição 2023</a>
-                        <a href="2024.html"> Edição 2024</a>
-                    </div>
-                </div>
-            </ul>
-        </nav>
+
         <main>
-            Este é o site do Grande Quiz de Cálculo Diferencial e Integral
-            E já temos um repositório GIT
+            <p id= "GQC2021">O <I>Grande Quiz de Cálculo Diferencial e Integral</I> é uma iniciativa 
+                criada pelo professor <a href="https://www.math.tecnico.ulisboa.pt/~pfreitas/">Pedro Freitas</a> durante a pandemia,
+                de forma a ter um quiz como o que os seus colegas faziam, porém 
+                com um objetivo radicalmente diferente.
+            </p>
+            <p>Este Quiz é de participação voluntária e, embora se receba um
+                certificado de participação muito bonito, quem o faz é por 
+                vontade própria ou pelo <I>"Greater Good"</I> como 
+                disse o professor na entrega de prémios de 2022.
+            </p>
+
+            <div class="botao" onclick="javascript:muda(2021)">
+                Edição 2021
+            </div>
+            <br>
+            <div class="botao" onclick="javascript:muda(2022)">
+                Edição 2022
+            </div>
+            <br>
+            <div id= "GQC2022" class="row" >
+                <div class="column2">
+                    <h1>
+                        Edição de 2022
+                    </h1>
+                    <h2>
+                        Vencedores:
+                    </h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere voluptatibus qui sed quod? Vel deserunt odit tenetur veritatis voluptas officiis, iure quos ut ullam et voluptate reiciendis quisquam expedita.
+                </div>
+                <div class="column2">
+                    <a download="GQC2022" href="GQC2022.png" title="GQC 2022">
+                        <img class ="quiz" alt="GQC2022" src="GQC2022.png">
+                    </a>
+                </div>
+            </div>
+            <div class="botao" onclick="javascript:muda(2023)">
+                Edição 2023
+            </div>
+            <br>
+            <div id= "GQC2023" class="row">
+                <div class="column2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem praesentium est nisi, quam esse vitae in facilis tempore ipsum, numquam dignissimos illo dicta dolorum nam odio hic atque quis.
+                </div>
+                <div class="column2">
+                    <a download="GQC2023" href="GQC2023.png" title="GQC 2023">
+                        <img class ="quiz" alt="GQC2023" src="GQC2023.png">
+                    </a>
+                </div>
+            </div>
         </main>
+        <footer>
+            <div class="row">
+                <div class="column" style="width: 30%; padding-left: 10px;">
+                    <div style="text-align: center;"><b>Contactos:</b></div>
+                    Pedro Freitas<br>
+                    &#9993 pfreitas@math.tecnico.ulisboa.pt<br>
+                    &#128205 Departamento de Mtemática, Instituto Superior Técnico
+                </div>
+                <div class="column" style="width: 58%;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id natus aliquam, laudantium repudiandae adipisci, praesentium fugiat excepturi necessitatibus aliquid recusandae, accusamus eaque harum fugit beatae omnis minima. Expedita, optio facilis.
+                </div>
+                <div class="column" style="width: 10%;">
+                    <div style="text-align: center;"><b>Autores:</b></div>
+                    Estêvão Gomes<br>
+                    André Morais<br>
+                    Filipe Santos
+                </div>
+            </div>
+          </footer>
     </body>
 </html>

@@ -1,9 +1,16 @@
-* {
-    font-family: Arial;
+@font-face{
+  src: url(fonts/Pacifico-Regular.ttf);
+  font-family: Pacifico;
 }
+
+* {
+    font-family: "Times New Roman", sans-serif;
+}
+
 body{
     margin: 0px;
 }
+
 main{
     margin: 20px;
 }
@@ -11,65 +18,70 @@ main{
 h1{
     color: darkblue;
     text-align: center;
+    font-family: 'Pacifico';
+}
+h2{
+  font-family: 'Pacifico';
 }
 
-.navbar ul{
-    list-style-type: none;
-    background-color: hsl(0, 0%, 25%);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
-.dropdown{
-    display: inline-block;
-}
-.dropdown button{
-    background-color: hsl(0, 0%, 25%);
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    margin: 0px;
-    display: block;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-}
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-}
-.dropdown:hover button{
-    background-color: hsl(0, 0%, 10%);
+
+div.botao {
+  background: #ece8е5;
+  border-style: outset;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 8px; 
+  color: white;
+  padding: 3px 3px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: default;
 }
 
-.dropdown:hover .content{
-    display: block;
+div.botao:hover{
+  border-style: outset;
+  box-shadow: none;
+  background: rgb(238, 238, 238);
 }
 
-.dropdown .content{
-    display: none;
-    position: absolute;
-    background-color: hsl(0, 0%, 25%);
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
-    min-width: 142px;
+.column2 {
+  float: left;
+  width: 50%;
+}
+.column {
+  float: left;
 }
 
-.navbar a:hover{
-    background-color: hsl(0, 0%, 10%);
+.row {
+  display: none;
+}
+footer .row {
+  display: table;
 }
 
-.navbar li{
-    float: left;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.quiz{
+  padding: 0px; 
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.7);
+  position: auto;
 }
 
-.box {
-    height: 424px;
-    width: 300px;
-    padding: 0px; 
-    margin: 10px;
-    border: 10px;
+footer {
+  padding: 7px;
+  background-color: lightgrey;
+  color: black;
 }
