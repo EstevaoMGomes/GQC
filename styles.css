@@ -24,7 +24,6 @@ h2{
   font-family: 'Pacifico';
 }
 
-
 div.botao {
   background: white;
   border-style: outset;
@@ -32,12 +31,13 @@ div.botao {
   border-color: black;
   border-radius: 8px; 
   color: white;
-  padding: 3px 3px;
   text-align: center;
+  width: 647px; 
   color: black;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-size: 2em;
+  font-weight: bold;
   margin: 4px 2px;
   cursor: default;
   color: darkblue;
@@ -84,6 +84,6 @@ footer .row {
 
 footer {
   padding: 7px;
-  background-color: lightgrey;
+  background-color: rgb(238, 238, 238);
   color: black;
 }

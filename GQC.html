@@ -7,10 +7,13 @@
         <title> Grande Quiz de Cálculo </title>
         <script>
             function muda(p){
+                var b = p+"botao"
                 if(document.getElementById(p).style.display=='table'){
                     document.getElementById(p).style.display='none';
+                    document.getElementById(b).style.display='inline-block';
                 }else{
                     document.getElementById(p).style.display='table';
+                    document.getElementById(b).style.display='none';
                 }
             }
         </script>
@@ -22,30 +25,32 @@
 
 
         <main>
-            <p>O <I>Grande Quiz de Cálculo Diferencial e Integral</I> é uma iniciativa 
+            <p align="justify">O <I>Grande Quiz de Cálculo Diferencial e Integral</I> é uma iniciativa 
                 criada pelo professor <a href="https://www.math.tecnico.ulisboa.pt/~pfreitas/">Pedro Freitas</a> durante a pandemia,
                 de forma a ter um quiz como o que os seus colegas faziam, porém 
                 com um objetivo radicalmente diferente.
             </p>
-            <p>Este Quiz é de participação voluntária e, embora se receba um
+            <p align="justify">Este Quiz é de participação voluntária e, embora se receba um
                 certificado de participação muito bonito, quem o faz é por 
                 vontade própria ou pelo <I>"Greater Good"</I> como 
                 disse o professor na entrega de prémios de 2022.
             </p>
 
-            <div class="botao" onclick="javascript:muda('GQC2020')">
-                Edição 2020
+            <div id= "GQC2020botao" class="botao" onclick="javascript:muda('GQC2020')">
+                Edição de 2020
             </div>
-            <br>
+
             <div id= "GQC2020" class="row" >
                 <div class="column2">
-                    <h1>
+                    <div class="botao" onclick="javascript:muda('GQC2020')">
                         Edição de 2020
-                    </h1>
-                    <p>
+                    </div>
+                    <p align="justify">
                         Na edição 0 do Grande Quiz de Cálculo, este foi feito como uma experiência devido à pandemia.
                     </p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere voluptatibus qui sed quod? Vel deserunt odit tenetur veritatis voluptas officiis, iure quos ut ullam et voluptate reiciendis quisquam expedita.
+                    <p align="justify">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magnam inventore eos quibusdam velit tempore omnis veritatis maxime doloremque quia, ducimus ullam ad temporibus est deleniti consectetur nesciunt blanditiis! Dolores.
+                    </p>
                 </div>
                 <div class="column2">
                     <a download="GQC2020" href="GQC2020.png" title="GQC 2020">
@@ -54,19 +59,21 @@
                 </div>
             </div>
 
-            <div class="botao" onclick="javascript:muda('GQC2021')">
-                Edição 2021
-            </div>
             <br>
+            <div id= "GQC2021botao" class="botao" onclick="javascript:muda('GQC2021')">
+                Edição de 2021
+            </div>
             <div id= "GQC2021" class="row" >
                 <div class="column2">
-                    <h1>
+                    <div id= "GQC2021botao" class="botao" onclick="javascript:muda('GQC2021')">
                         Edição de 2021
-                    </h1>
+                    </div>
                     <h2>
                         Vencedores:
                     </h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere voluptatibus qui sed quod? Vel deserunt odit tenetur veritatis voluptas officiis, iure quos ut ullam et voluptate reiciendis quisquam expedita.
+                    <p align="justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere voluptatibus qui sed quod? Vel deserunt odit tenetur veritatis voluptas officiis, iure quos ut ullam et voluptate reiciendis quisquam expedita.
+                    </p>
                 </div>
                 <div class="column2">
                     <a download="GQC2021" href="GQC2021.png" title="GQC 2021">
@@ -75,22 +82,24 @@
                 </div>
             </div>
 
-            <div class="botao" onclick="javascript:muda('GQQ2021')">
-                GQQ 2021
-            </div>
             <br>
+            <div id= "GQQ2021botao" class="botao" onclick="javascript:muda('GQQ2021')">
+                Grande Quarter Quiz 2021
+            </div>
             <div id= "GQQ2021" class="row" >
                 <div class="column2">
-                    <h1>
+                    <div id= "GQQ2021botao" class="botao" onclick="javascript:muda('GQQ2021')">
                         Grande Quarter Quiz 2021
-                    </h1>
-                    <p>
+                    </div>
+                    <p align="justify">
                         Devido a uma pergunta feita numa aula sobre a diferença nos gráficos das funções <b>arctan</b> e <b>tanh</b>, foi realizado o primeiro Grande Quarter Quiz na pausa entre semestres com o propósito de através das ferramentas dadas até então em Cálculo I, conseguir diferenciar os gráficos das diferentes funções.
                     </p>
                     <h2>
                         Vencedores:
                     </h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere voluptatibus qui sed quod? Vel deserunt odit tenetur veritatis voluptas officiis, iure quos ut ullam et voluptate reiciendis quisquam expedita.
+                    <p align="justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus culpa dolorem, itaque dolor est voluptatum ut. Architecto odit quaerat nemo illo. Veniam quidem nulla animi commodi sequi voluptas omnis!
+                    </p>
                 </div>
                 <div class="column2">
                     <a download="GQQ2021" href="GQQ2021.png" title="GQQ 2021">
@@ -99,19 +108,21 @@
                 </div>
             </div>
             
-            <div class="botao" onclick="javascript:muda('GQC2022')">
-                Edição 2022
-            </div>
             <br>
+            <div id= "GQC2022botao" class="botao" onclick="javascript:muda('GQC2022')">
+                Edição de 2022
+            </div>
             <div id= "GQC2022" class="row" >
                 <div class="column2">
-                    <h1>
+                    <div id= "GQC2022botao" class="botao" onclick="javascript:muda('GQC2022')">
                         Edição de 2022
-                    </h1>
+                    </div>
                     <h2>
                         Vencedores:
                     </h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere voluptatibus qui sed quod? Vel deserunt odit tenetur veritatis voluptas officiis, iure quos ut ullam et voluptate reiciendis quisquam expedita.
+                    <p align="justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi possimus vel recusandae obcaecati dignissimos ab, natus impedit qui repudiandae ipsum magni voluptatem odio sed atque alias cum, necessitatibus maiores porro?
+                    </p>
                 </div>
                 <div class="column2">
                     <a download="GQC2022" href="GQC2022.png" title="GQC 2022">
@@ -119,13 +130,22 @@
                     </a>
                 </div>
             </div>
-            <div class="botao" onclick="javascript:muda('GQC2023')">
-                Edição 2023
-            </div>
+
             <br>
-            <div id= "GQC2023" class="row">
+            <div id= "GQC2023botao" class="botao" onclick="javascript:muda('GQC2023')">
+                Edição de 2023
+            </div>
+            <div id= "GQC2023" class="row" >
                 <div class="column2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem praesentium est nisi, quam esse vitae in facilis tempore ipsum, numquam dignissimos illo dicta dolorum nam odio hic atque quis.
+                    <div id= "GQC2023botao" class="botao" onclick="javascript:muda('GQC2023')">
+                        Edição de 2023
+                    </div>
+                    <h2>
+                        Vencedores:
+                    </h2>
+                    <p align="justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ex asperiores consequatur tenetur obcaecati sed iusto totam fuga esse, in, nemo aspernatur repudiandae iure! Assumenda eos nam consequuntur possimus repellendus.
+                    </p>
                 </div>
                 <div class="column2">
                     <a download="GQC2023" href="GQC2023.png" title="GQC 2023">
