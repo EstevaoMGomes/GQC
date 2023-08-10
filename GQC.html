@@ -26,14 +26,14 @@
 
         <main>
             <p align="justify">O <I>Grande Quiz de Cálculo Diferencial e Integral</I> é uma iniciativa 
-                criada pelo professor <a href="https://www.math.tecnico.ulisboa.pt/~pfreitas/">Pedro Freitas</a> durante a pandemia,
+                criada pelo Professor <a href="https://www.math.tecnico.ulisboa.pt/~pfreitas/">Pedro Freitas</a> durante a pandemia,
                 de forma a ter um quiz como o que os seus colegas faziam, porém 
                 com um objetivo radicalmente diferente.
             </p>
             <p align="justify">Este Quiz é de participação voluntária e, embora se receba um
                 certificado de participação muito bonito, quem o faz é por 
                 vontade própria ou pelo <I>"Greater Good"</I> como 
-                disse o professor na entrega de prémios de 2022.
+                disse o Professor na entrega de prémios de 2022.
             </p>
 
             <div id= "GQC2020botao" class="botao" onclick="javascript:muda('GQC2020')">
@@ -153,14 +153,55 @@
                     </a>
                 </div>
             </div>
+
+            <div id= "GQC2024botao" class="botao" onclick="javascript:muda('GQC2024')">
+                Edição de 2024
+            </div>
+            <div id= "GQC2024" class="row" >
+                <div class="column2">
+                    <div id= "GQC2024botao" class="botao" onclick="javascript:muda('GQC2024')">
+                        Edição de 2024
+                    </div>
+                    <h2>
+                        Tempo até à próxima edição:
+                    </h2>
+
+                    <p id="demo"></p>
+
+                    <script>
+                        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+                        var x = setInterval(function() {
+
+                        var now = new Date().getTime();
+
+                        var distance = countDownDate - now;
+
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+
+                        if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                        }, 1000);
+                    </script>
+                <div class="column2">
+                </div>
+            </div>
         </main>
         <footer>
             <div class="row">
                 <div class="column" style="width: 30%; padding-left: 10px;">
                     <div style="text-align: center;"><b>Contactos:</b></div>
                     Pedro Freitas<br>
-                    &#9993 pfreitas@math.tecnico.ulisboa.pt<br>
-                    &#128205 Departamento de Mtemática, Instituto Superior Técnico
+                    &#9993 <a itemprop='email' href='mailto:pfreitas@math.tecnico.ulisboa.pt'> pfreitas@math.tecnico.ulisboa.pt</a><br>
+					&#128205 <a href='https://goo.gl/maps/BgAeBCoaFm8xsSha9'> Departamento de Matemática, Instituto Superior Técnico </a>
                 </div>
                 <div class="column" style="width: 55%; text-align: right; padding-right: 50px;">
                     <img alt="DM" src="DM.png" style="width: 20%">
@@ -175,3 +216,6 @@
           </footer>
     </body>
 </html>
+
+
+
