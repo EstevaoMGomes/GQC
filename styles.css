@@ -57,23 +57,14 @@ div.botao:hover{
 .column {
   float: left;
 }
-
-.column2:hover .overlay{
-  opacity: 0.8;
-}
-.column2:hover .quiz{
-  -webkit-filter: brightness(50%);
-}
-.column:hover .overlay{
-  opacity: 0.8;
-}
-.column:hover .quiz{
-  -webkit-filter: brightness(50%);
+img.quiz:hover{
+  cursor: url("download.png"), default;
 }
 
 .row {
   display: none;
 }
+
 footer .row {
   display: table;
 }
@@ -98,26 +89,6 @@ footer .row {
   -o-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-}
-
-.overlay{
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  background-color: black;
-}
-
-.watermark{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(+68%, -100%);
-}
-.watermark2{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(+68%, -180%);
 }
 
 footer {
