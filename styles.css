@@ -25,7 +25,7 @@ h2{
 }
 
 div.botao {
-  background: white;
+  background: rgb(195, 235, 247);
   border-style: outset;
   border-width: 1px;
   border-color: black;
@@ -47,7 +47,7 @@ div.botao {
 div.botao:hover{
   border-style: outset;
   box-shadow: none;
-  background: rgb(238, 238, 238);
+  background: #f1ffff;
 }
 
 .column2 {
