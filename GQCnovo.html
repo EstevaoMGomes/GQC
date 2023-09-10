@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title> Grande Quiz de Cálculo </title>
+        <script>
+            function muda(p){
+                var b = p+"botao"
+                if(document.getElementById(p).style.display=='table'){
+                    document.getElementById(p).style.display='none';
+                    document.getElementById(b).style.display='inline-block';
+                }else{
+                    document.getElementById(p).style.display='table';
+                    document.getElementById(b).style.display='none';
+                }
+                if(document.getElementById("GQC2020").style.display == 'none'
+                && document.getElementById("GQC2021").style.display == 'none'
+                && document.getElementById("GQC2022").style.display == 'none'
+                && document.getElementById("GQC2023").style.display == 'none'
+                && document.getElementById("GQC2024").style.display == 'none'
+                && document.getElementById("GQQ2021").style.display == 'none'){
+                    document.getElementById("mainimage").style.display='block';
+                }else{
+                    document.getElementById("mainimage").style.display='none';
+                }
+            }
+            function readmore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("rmbtn");
+
+            if (dots.style.display == "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "<b>continuar a ler...</b>";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "<br><b>mostrar menos</b>";
+                moreText.style.display = "inline";
+            }
+            }
+        </script>
+    </head> 
+<BODY TEXT="#000000" LINK="#0000ee" VLINK="#336600" BGCOLOR="#f1ffff" DIR="LTR">
+    <body>
+        <h1>
+            O Grande Quiz de Cálculo Diferencial e Integral
+        </h1>
+
+        <main>
+            <p align="justify">O <I>Grande Quiz de Cálculo Diferencial e Integral</I> surgiu durante a pandemia, no segundo semestre do ano lectivo de 2019-20, juntamente com outras iniciativas que tinham por intuito promover a discussão de tópicos associados à matéria (e às aulas) de CDI-II  entre os alunos durante o lockdown 
+            <span id="dots"></span><span id="more" style="display: none;">- um outro exemplo, que surgiu por alturas da Páscoa, consistiu na modelação da forma de um ovo que, para o caso de pensarem que se trata um problema trivial, sugiro que o tentem fazer.
+            <br><br>
+            Se compararmos a pergunta 1. da edição 0 ou a parte da pergunta 9. para um ponto extra da edição de 2021, com qualquer uma das perguntas da edição de 2023, por exenplo, verificamos que o quiz evoluíu para questões que são não só mais independentes da presença nas aulas, como a grande maioria tem agora um teor bastante mais matemático. Apesar desta evolução, o espírito do Quiz continua fiel às suas origens, pretendendo simultaneamente mostrar que com o que já aprenderam em CDI-I podem ir bastante longe, tanto em matemática como em problemas do chamado mundo real, que requerem, de facto, conceitos e técnicas matemáticas bastante mais sofisticados do que os que conheciam antes de entrar para a universidade. Se for bem sucedido, faz parte do espírito do GQCDI também divertir e surpreender.
+            <br><br>
+            Nestas condições, e como não podia deixar de ser, o Quiz é de participação inteiramente voluntária, sendo a data limite para a entrega das respostas posterior à publicação das notas finais da cadeira. Também não há prémios. Toda e qualquer participação é, portanto, feita por vontade própria, de forma perfeitamente altruísta e para o <I>"bem comunitário"</I>. Para além de memórias do tempo em que tinham tempo e interesse para passar horas a pensar em problemas destes, apenas ficarão com um certificado de participação que descreve todas as qualidades do Quiz referidas acima, as quais serão certamente mais importantes que um valor a mais ou a menos numa mera cadeira, e ornamentarão certamente muito bem qualquer CV. 
+            <br><br>
+            Obviamente que uma iniciativa deste tipo só pode exisitr graças aos alunos que participam nela de forma voluntária e interessada. Neste caso, penso que é possível dizer que os alunos que têm participado ao longo destes anos não só tornaram a iniciativa possível como a têm moldado à sua personalidade. Desde o grupo que já concorreu a três edições libertando o GQCDI de apenas se destinar a alunos do primeiro ano e fazendo com que concorrer em grupo se tornasse (quase) a norma, até aos grupos que em 2023 entregaram cadernos de respostas com mais de 10 páginas escritas em LaTeX e, num caso, um vídeo, todos têm contribuído para a evolução do formato do Quiz. Desde as quatro perguntas da edição zero, das quais apenas uma era verdadeiramente sobre matemática, até aos 6 grupos da edição de 2023 que incluíram o comportamento assimptótico de  funções theta (os vossos colegas na altura também não sabiam o que isso era) ao paradoxo de Russell (idem), o nível de sofisticação das perguntas (e das respostas!) têm aumentado bastante ao longo dos anos. Mas o ponto principal continua a ser participar, divertirem-se a fazê-lo e, se pelo meio aprenderem alguma coisa, perfeito.
+            </span>
+            <span class="botao" id="rmbtn" onclick="readmore()">
+                <b>continuar a ler...</b> 
+            </span>
+
+            <br><br>
+
+            <div id= "mainimage" style="display: block; float: right; width: 50%;">
+                <a download="GQC?" href="GQC.png" title="GQC?">
+                    <img class ="quiz" alt="GQC?" src="GQC.png">
+                </a>
+            </div>
+            
+            <div class="inclose">
+                <div id= "GQC2020botao" class="botao" onclick="muda('GQC2020')" >
+                    Edição zero [2020]
+                </div>
+            </div>
+
+            <div id= "GQC2020" class="row" >
+                <div class="column2 inclose" >
+                    <div class="botao" onclick="muda('GQC2020')">
+                        Edição zero [2020]
+                    </div>
+                    <p align="justify">
+                        A edição zero do GQCDI foi feita na última aula, tendo sido dado um prazo de algumas horas apenas para a entrega das respostas. Tanto esta edição como a de 2021 foram feitas na sequência de Cálculo Diferencial e Integral II.
+                    </p>
+                    <p align="justify">
+                        &nbsp&nbsp
+                        <!--Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magnam inventore eos quibusdam velit tempore omnis veritatis maxime doloremque quia, ducimus ullam ad temporibus est deleniti consectetur nesciunt blanditiis! Dolores.-->
+                    </p> 
+                </div>
+                <div class="column2">
+                    <a download="GQC2020" href="GQC2020.png" title="GQC 2020">
+                        <img class ="quiz" alt="GQC2020" src="GQC2020.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="inclose">
+                <div id= "GQC2021botao" class="botao" onclick="muda('GQC2021')">
+                    GQCDI 2021
+                </div>
+            </div>
+            <div id= "GQC2021" class="row" >
+                <div class="column2 inclose">
+                    <div id= "GQC2021botao" class="botao" onclick="muda('GQC2021')">
+                        GQCDI 2021
+                    </div>
+                    <!--
+                     <h2>
+                        Vencedores:
+                    </h2>
+                    -->
+                    <p align="justify">
+                        <!--Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magnam inventore eos quibusdam velit tempore omnis veritatis maxime doloremque quia, ducimus ullam ad temporibus est deleniti consectetur nesciunt blanditiis! Dolores.-->
+                    </p> 
+
+                </div>
+                <div class="column2">
+                    <a download="GQC2021" href="GQC2021.png" title="GQC 2021">
+                        <img class ="quiz" alt="GQC2021" src="GQC2021.png">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="inclose">
+                <div id= "GQC2022botao" class="botao" onclick="muda('GQC2022')">
+                    GQCDI 2022
+                </div>
+            </div>
+            <div id= "GQC2022" class="row" >
+                <div class="column2 inclose">
+                    <div id= "GQC2022botao" class="botao" onclick="muda('GQC2022')">
+                        GQCDI 2022
+                    </div>
+                    <!-- 
+                    <h2>
+                        Vencedores:
+                    </h2>
+                    -->
+                    <p align="justify">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <!--Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magnam inventore eos quibusdam velit tempore omnis veritatis maxime doloremque quia, ducimus ullam ad temporibus est deleniti consectetur nesciunt blanditiis! Dolores.-->
+                    </p> 
+                </div>
+                <div class="column2">
+                    <a download="GQC2022" href="GQC2022.png" title="GQC 2022">
+                        <img class ="quiz" alt="GQC2022" src="GQC2022.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="inclose">
+                <div id= "GQC2023botao" class="botao" onclick="muda('GQC2023')">
+                    GQCDI 2023
+                </div>
+            </div>
+            <div id= "GQC2023" class="row" >
+                <div class="column2 inclose">
+                    <div id= "GQC2023botao" class="botao" onclick="muda('GQC2023')">
+                        GQCDI 2023
+                    </div>
+<!--                    <h2>
+                        Vencedores:
+                    </h2>
+                    <p align="justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ex asperiores consequatur tenetur obcaecati sed iusto totam fuga esse, in, nemo aspernatur repudiandae iure! Assumenda eos nam consequuntur possimus repellendus.
+                    </p>
+-->
+                </div>
+                <div class="column2">
+                    <a download="GQC2023" href="GQC2023.png" title="GQC 2023">
+                        <img class ="quiz" alt="GQC2023" src="GQC2023.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="inclose">
+                <div id= "GQC2024botao" class="botao" onclick="muda('GQC2024')">
+                    GQCDI 2024
+                </div>
+            </div>
+            <div id= "GQC2024" class="row" >
+                <div class="column2 inclose">
+                    <div id= "GQC2024botao" class="botao" onclick="muda('GQC2024')">
+                        GQCDI 2024
+                    </div>
+                    Esta nova edição sairá no fim do 1º semestre.
+                </div>
+                <div class="column2" style="text-align: center; padding-left: 30px;">
+                    <h2>
+                        Tempo até à próxima edição:
+                    </h2>
+                    <p id="demo"></p>
+
+                    <script>
+                        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+                        var x = setInterval(function() {
+
+                        var now = new Date().getTime();
+
+                        var distance = countDownDate - now;
+
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+
+                        if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+
+            <br>
+            <div class="inclose">
+                <div id= "GQQ2021botao" class="botao" onclick="muda('GQQ2021')" style="font-size: 1.6em;">
+                    Grande Quarter Quiz 2021
+                </div>
+            </div>
+            <div id= "GQQ2021" class="row" >
+                <div class="column2 inclose">
+                    <div id= "GQQ2021botao" class="botao" onclick="muda('GQQ2021')" style="font-size: 1.6em;">
+                        Grande Quarter Quiz 2021
+                    </div>
+                    <p align="justify">
+                        Motivado por uma pergunta feita numa aula sobre a diferença nos gráficos das funções <b>arctan</b> e <b>tanh</b>, foi realizado o primeiro Grande Quarter Quiz na pausa entre quarters com o propósito de, através das ferramentas dadas até então na cadeira, conseguir distinguir os gráficos das diferentes funções.
+                    </p>
+<!--                    <h2>
+                        Vencedores:
+                    </h2>
+                    <p align="justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus culpa dolorem, itaque dolor est voluptatum ut. Architecto odit quaerat nemo illo. Veniam quidem nulla animi commodi sequi voluptas omnis!
+                    </p>
+-->
+                </div>
+                <div class="column2">
+                    <a download="GQQ2021" href="GQQ2021.png" title="GQQ 2021">
+                        <img class ="quiz" alt="GQQ2021" src="GQQ2021.png">
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="column" style="width: 30%; padding-left: 10px;">
+                    <div style="text-align: center;"><b>Contactos:</b></div>
+                    <a href="https://www.math.tecnico.ulisboa.pt/~pfreitas/">Pedro Freitas</a><br>
+                    &#9993 <a itemprop='email' href='mailto:pfreitas@math.tecnico.ulisboa.pt'> pfreitas@math.tecnico.ulisboa.pt</a><br>
+					&#128205 <a href='https://goo.gl/maps/BgAeBCoaFm8xsSha9'> Departamento de Matemática, Instituto Superior Técnico </a>
+                </div>
+                <div class="column" style="width: 40%; text-align: right; padding-right: 50px;">
+                    <img alt="DM" src="DM.png" style="width: 30%">
+                </div>
+                <div class="column" style="width: 25%;">
+                    <div style="text-align: center;">
+                        <br>
+                        <b>Quiz alumni e criadores da página:</b> <br>
+                        Estêvão Gomes &nbsp André Morais &nbsp Filipe Santos
+                    </div>
+                </div>
+            </div>
+          </footer>
+    </body>
+</html>
+
+
+

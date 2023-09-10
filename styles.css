@@ -37,7 +37,6 @@ div.botao {
   color: white;
   text-align: center;
   width: calc(647px - var(--ident)); 
-  color: black;
   text-decoration: none;
   display: inline-block;
   font-size: 2em;
@@ -53,8 +52,14 @@ div.inclose {
 }
 
 #rmbtn{
+  cursor: default;
+  background: none;
+  color: black;
   width: 180px;
   font-size: 1.2em;
+}
+#rmbtn:hover{
+  color: grey;
 }
 
 div.botao:hover{
