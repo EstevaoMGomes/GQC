@@ -16,6 +16,21 @@
                     document.getElementById(b).style.display='none';
                 }
             }
+            function readmore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("rmbtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Continuar a ler...";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Mostrar menos";
+                moreText.style.display = "inline";
+            }
+            }
         </script>
     </head> 
 <BODY TEXT="#000000" LINK="#0000ee" VLINK="#336600" BGCOLOR="#f1ffff" DIR="LTR">
@@ -25,26 +40,30 @@
         </h1>
 
         <main>
-            <p align="justify">O <I>Grande Quiz de Cálculo Diferencial e Integral</I> surgiu durante a pandemia, no segundo semestre do ano lectivo de 2019-20, juntamente com outras iniciativas que tinham por intuito promover a discussão de tópicos associados à matéria (e às aulas) de CDI-II  entre os alunos durante o lockdown - um outro exemplo, que surgiu por alturas da Páscoa, consistiu na modelação da forma de um ovo que, para o caso de pensarem que se trata um problema trivial, sugiro que o tentem fazer.
+            <p align="justify">O <I>Grande Quiz de Cálculo Diferencial e Integral</I> surgiu durante a pandemia, no segundo semestre do ano lectivo de 2019-20, juntamente com outras iniciativas que tinham por intuito promover a discussão de tópicos associados à matéria (e às aulas) de CDI-II  entre os alunos durante o lockdown 
+            <span id="dots">...</span><span id="more" style="display: none;">- um outro exemplo, que surgiu por alturas da Páscoa, consistiu na modelação da forma de um ovo que, para o caso de pensarem que se trata um problema trivial, sugiro que o tentem fazer.
+            <br><br>
+            Se compararmos a pergunta 1. da edição 0 ou a parte da pergunta 9. para um ponto extra da edição de 2021, com qualquer uma das perguntas da edição de 2023, por exenplo, verificamos que o quiz evoluíu para questões que são não só mais independentes da presença nas aulas, como a grande maioria tem agora um teor bastante mais matemático. Apesar desta evolução, o espírito do Quiz continua fiel às suas origens, pretendendo simultaneamente mostrar que com o que já aprenderam em CDI-I podem ir bastante longe, tanto em matemática como em problemas do chamado mundo real, que requerem, de facto, conceitos e técnicas matemáticas bastante mais sofisticados do que os que conheciam antes de entrar para a universidade. Se for bem sucedido, faz parte do espírito do GQCDI também divertir e surpreender.
+            <br><br>
+            Nestas condições, e como não podia deixar de ser, o Quiz é de participação inteiramente voluntária, sendo a data limite para a entrega das respostas posterior à publicação das notas finais da cadeira. Também não há prémios. Toda e qualquer participação é, portanto, feita por vontade própria, de forma perfeitamente altruísta e para o <I>"bem comunitário"</I>. Para além de memórias do tempo em que tinham tempo e interesse para passar horas a pensar em problemas destes, apenas ficarão com um certificado de participação que descreve todas as qualidades do Quiz referidas acima, as quais serão certamente mais importantes que um valor a mais ou a menos numa mera cadeira, e ornamentarão certamente muito bem qualquer CV. 
+            <br><br>
+            Obviamente que uma iniciativa deste tipo só pode exisitr graças aos alunos que participam nela de forma voluntária e interessada. Neste caso, penso que é possível dizer que os alunos que têm participado ao longo destes anos não só tornaram a iniciativa possível como a têm moldado à sua personalidade. Desde o grupo que já concorreu a três edições libertando o GQCDI de apenas se destinar a alunos do primeiro ano e fazendo com que concorrer em grupo se tornasse (quase) a norma, até aos grupos que em 2023 entregaram cadernos de respostas com mais de 10 páginas escritas em LaTeX e, num caso, um vídeo, todos têm contribuído para a evolução do formato do Quiz. Desde as quatro perguntas da edição zero, das quais apenas uma era verdadeiramente sobre matemática, até aos 6 grupos da edição de 2023 que incluíram o comportamento assimptótico de  funções theta (os vossos colegas na altura também não sabiam o que isso era) ao paradoxo de Russell (idem), o nível de sofisticação das perguntas (e das respostas!) têm aumentado bastante ao longo dos anos. Mas o ponto principal continua a ser participar, divertirem-se a fazê-lo e, se pelo meio aprenderem alguma coisa, perfeito.
+            </span>
             </p>
-            <p align="justify">Se compararmos a pergunta 1. da edição 0 ou a parte da pergunta 9. para um ponto extra da edição de 2021, com qualquer uma das perguntas da edição de 2023, por exenplo, verificamos que o quiz evoluíu para questões que são não
-                só mais independentes da presença nas aulas, como a grande maioria tem agora um teor bastante mais matemático.
-                Apesar desta evolução, o espírito do Quiz continua fiel às suas origens, pretendendo simultaneamente mostrar que com o que já aprenderam em CDI-I podem ir bastante longe, tanto em matemática como em problemas do chamado mundo real, que requerem, de facto, conceitos e técnicas matemáticas bastante mais sofisticados do que os que conheciam antes de entrar para a universidade. Se for bem sucedido, faz parte do espírito do GQCDI também divertir e surpreender.
-            </p>
-            <p align="justify">Nestas condições, e como não podia deixar de ser, o Quiz é de participação inteiramente voluntária, sendo a data limite para a entrega das respostas posterior à publicação das notas finais da cadeira. Também não há prémios. Toda e qualquer participação é, portanto, feita por vontade própria, de forma perfeitamente altruísta e para o <I>"bem comunitário"</I>. Para além de memórias do tempo em que tinham tempo e interesse para passar horas a pensar em problemas destes, apenas ficarão com um certificado de participação que descreve todas as qualidades do Quiz referidas acima, as quais serão certamente mais importantes que um valor a mais ou a menos numa mera cadeira, e ornamentarão certamente muito bem qualquer CV. 
-            </p>
+            <div class="botao" id="rmbtn" onclick="readmore()">
+                Continuar a ler...
+            </div>
 
-            <p align="justify">Obviamente que uma iniciativa deste tipo só pode exisitr graças aos alunos que participam nela de forma voluntária e interessada. Neste caso, penso que é possível dizer que os alunos que têm participado ao longo destes anos não só tornaram a iniciativa possível como a têm moldado à sua personalidade. Desde o grupo que já concorreu a três edições libertando o GQCDI de apenas se destinar a alunos do primeiro ano e fazendo com que concorrer em grupo se tornasse (quase) a norma, até aos grupos que em 2023 entregaram cadernos de respostas com mais de 10 páginas escritas em LaTeX e, num caso, um vídeo, todos têm contribuído para a evolução do formato do Quiz. Desde as quatro perguntas da edição zero, das quais apenas uma era verdadeiramente sobre matemática, até aos 6 grupos da edição de 2023 que incluíram o comportamento assimptótico de  funções theta (os vossos colegas na altura também não sabiam o que isso era) ao paradoxo de Russell (idem), o nível de sofisticação das perguntas (e das respostas!) têm aumentado bastante ao longo dos anos. Mas o ponto principal continua a ser participar, divertirem-se a fazê-lo e, se pelo meio aprenderem alguma coisa, perfeito.
-            </p>
-
-            <br>
-            <div id= "GQC2020botao" class="botao" onclick="javascript:muda('GQC2020')" >
-                Edição zero [2020]
+            <br><br>
+            <div class="inclose">
+                <div id= "GQC2020botao" class="botao" onclick="muda('GQC2020')" >
+                    Edição zero [2020]
+                </div>
             </div>
 
             <div id= "GQC2020" class="row" >
-                <div class="column2">
-                    <div class="botao" onclick="javascript:muda('GQC2020')">
+                <div class="column2 inclose" >
+                    <div class="botao" onclick="muda('GQC2020')">
                         Edição zero [2020]
                     </div>
                     <p align="justify">
@@ -61,13 +80,14 @@
                 </div>
             </div>
 
-            <br>
-            <div id= "GQC2021botao" class="botao" onclick="javascript:muda('GQC2021')">
-                GQCDI 2021
+            <div class="inclose">
+                <div id= "GQC2021botao" class="botao" onclick="muda('GQC2021')">
+                    GQCDI 2021
+                </div>
             </div>
             <div id= "GQC2021" class="row" >
-                <div class="column2">
-                    <div id= "GQC2021botao" class="botao" onclick="javascript:muda('GQC2021')">
+                <div class="column2 inclose">
+                    <div id= "GQC2021botao" class="botao" onclick="muda('GQC2021')">
                         GQCDI 2021
                     </div>
                     <h2>
@@ -83,16 +103,15 @@
                     </a>
                 </div>
             </div>
-
             
-            
-            <br>
-            <div id= "GQC2022botao" class="botao" onclick="javascript:muda('GQC2022')">
-                GQCDI 2022
+            <div class="inclose">
+                <div id= "GQC2022botao" class="botao" onclick="muda('GQC2022')">
+                    GQCDI 2022
+                </div>
             </div>
             <div id= "GQC2022" class="row" >
-                <div class="column2">
-                    <div id= "GQC2022botao" class="botao" onclick="javascript:muda('GQC2022')">
+                <div class="column2 inclose">
+                    <div id= "GQC2022botao" class="botao" onclick="muda('GQC2022')">
                         GQCDI 2022
                     </div>
                     <h2>
@@ -109,13 +128,14 @@
                 </div>
             </div>
 
-            <br>
-            <div id= "GQC2023botao" class="botao" onclick="javascript:muda('GQC2023')">
-                GQCDI 2023
+            <div class="inclose">
+                <div id= "GQC2023botao" class="botao" onclick="muda('GQC2023')">
+                    GQCDI 2023
+                </div>
             </div>
             <div id= "GQC2023" class="row" >
-                <div class="column2">
-                    <div id= "GQC2023botao" class="botao" onclick="javascript:muda('GQC2023')">
+                <div class="column2 inclose">
+                    <div id= "GQC2023botao" class="botao" onclick="muda('GQC2023')">
                         GQCDI 2023
                     </div>
                     <h2>
@@ -132,13 +152,14 @@
                 </div>
             </div>
 
-            <br>
-            <div id= "GQC2024botao" class="botao" onclick="javascript:muda('GQC2024')">
-                GQCDI 2024
+            <div class="inclose">
+                <div id= "GQC2024botao" class="botao" onclick="muda('GQC2024')">
+                    GQCDI 2024
+                </div>
             </div>
             <div id= "GQC2024" class="row" >
-                <div class="column2">
-                    <div id= "GQC2024botao" class="botao" onclick="javascript:muda('GQC2024')">
+                <div class="column2 inclose">
+                    <div id= "GQC2024botao" class="botao" onclick="muda('GQC2024')">
                         GQCDI 2024
                     </div>
                     Esta nova edição sairá no fim do 1º semestre.
@@ -176,13 +197,14 @@
             </div>
 
             <br>
-            <br>
-            <div id= "GQQ2021botao" class="botao" onclick="javascript:muda('GQQ2021')" style="width: 647px; font-size: 1.6em;">
-                Grande Quarter Quiz 2021
+            <div class="inclose">
+                <div id= "GQQ2021botao" class="botao" onclick="muda('GQQ2021')" style="font-size: 1.6em;">
+                    Grande Quarter Quiz 2021
+                </div>
             </div>
             <div id= "GQQ2021" class="row" >
-                <div class="column2">
-                    <div id= "GQQ2021botao" class="botao" onclick="javascript:muda('GQQ2021')" style="width: 647px; font-size: 1.6em;">
+                <div class="column2 inclose">
+                    <div id= "GQQ2021botao" class="botao" onclick="muda('GQQ2021')" style="font-size: 1.6em;">
                         Grande Quarter Quiz 2021
                     </div>
                     <p align="justify">
@@ -210,14 +232,15 @@
                     &#9993 <a itemprop='email' href='mailto:pfreitas@math.tecnico.ulisboa.pt'> pfreitas@math.tecnico.ulisboa.pt</a><br>
 					&#128205 <a href='https://goo.gl/maps/BgAeBCoaFm8xsSha9'> Departamento de Matemática, Instituto Superior Técnico </a>
                 </div>
-                <div class="column" style="width: 55%; text-align: right; padding-right: 50px;">
-                    <img alt="DM" src="DM.png" style="width: 20%">
+                <div class="column" style="width: 40%; text-align: right; padding-right: 50px;">
+                    <img alt="DM" src="DM.png" style="width: 30%">
                 </div>
-                <div class="column" style="width: 10%;">
-                    <div style="text-align: center;"><b>Autores:</b></div>
-                    Estêvão Gomes<br>
-                    André Morais<br>
-                    Filipe Santos
+                <div class="column" style="width: 25%;">
+                    <div style="text-align: center;">
+                        <br>
+                        <b>Quiz alumni e criadores da página:</b> <br>
+                        Estêvão Gomes &nbsp André Morais &nbsp Filipe Santos
+                    </div>
                 </div>
             </div>
           </footer>

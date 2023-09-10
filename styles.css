@@ -1,6 +1,10 @@
 @font-face{
-  src: url(fonts/Pacifico-Regular.ttf);
+  src: url(Pacifico-Regular.ttf);
   font-family: Pacifico;
+}
+
+:root {
+  --ident: 30px;
 }
 
 * {
@@ -32,7 +36,7 @@ div.botao {
   border-radius: 8px; 
   color: white;
   text-align: center;
-  width: 647px; 
+  width: calc(647px - var(--ident)); 
   color: black;
   text-decoration: none;
   display: inline-block;
@@ -44,6 +48,15 @@ div.botao {
   font-family: 'Pacifico';
 }
 
+div.inclose {
+  padding-left: var(--ident);
+}
+
+#rmbtn{
+  width: 180px;
+  font-size: 1.2em;
+}
+
 div.botao:hover{
   border-style: outset;
   box-shadow: none;
@@ -52,7 +65,7 @@ div.botao:hover{
 
 .column2 {
   float: left;
-  width: 50%;
+  width: calc(50% - var(--ident));
 }
 .column {
   float: left;
